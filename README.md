@@ -13,18 +13,19 @@ Framer module to add a minimal browser to your designs.
 Add `<web.browser(ui_content)>` at the end of your document, where `<ui_content>` is the main layer of your prototype.
 
 ## Example 
-	```javascript
-	document.body.style.cursor = "auto"
-	
-	web = require "browser"
-	
-	bg = new BackgroundLayer
-		backgroundColor: "F2F5F5"
-	
-	ui_content = new Layer
-		width: 800
-		eight: 600
-		backgroundColor: "#FFFFFF"
 
-	web.browser(ui_content)
-	```
+```coffeescript
+document.body.style.cursor = "auto"
+	
+web = require "browser"
+
+bg = new BackgroundLayer
+	backgroundColor: "F2F5F5"
+	
+ui_content = new Layer
+	width: 800
+	height: 600
+	backgroundColor: "#FFFFFF"
+
+web.browser(ui_content)
+```
